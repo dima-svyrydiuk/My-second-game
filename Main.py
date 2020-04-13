@@ -22,8 +22,7 @@ class Player(pygame.sprite.Sprite):
 	"""sprite for the Player"""
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load(os.path.join(img_folder, 'p1_jump.png')).convert()
-		self.image.set_colorkey(BLACK)
+		self.image = pygame.Surface((50, 50))
 		self.rect = self.image.get_rect()
 		self.rect.center = (WIDTH/2, HEIGHT/2)
 		self.y_speed = 5
